@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Horario">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Seleccione el horario"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="307dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/salidaLayout"
+                android:layout_width="209dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/salida"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="34dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Horario de Salida"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <RadioButton
+                        android:id="@+id/horarioSalida1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="9:00AM" />
+
+                    <RadioButton
+                        android:id="@+id/horarioSalida2"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:text="12:00PM" />
+
+                    <RadioButton
+                        android:id="@+id/horarioSalida3"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:text="15:00PM" />
+
+                    <RadioButton
+                        android:id="@+id/horarioSalida4"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="18:00PM" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/regresoLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/regreso"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="34dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Horario de Regreso"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <RadioButton
+                        android:id="@+id/horarioRegreso1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="8:00AM" />
+
+                    <RadioButton
+                        android:id="@+id/horarioRegreso2"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:text="13:00PM" />
+
+                    <RadioButton
+                        android:id="@+id/horarioRegreso3"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:text="17:00PM" />
+
+                    <RadioButton
+                        android:id="@+id/horarioRegreso4"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="19:00PM" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/nextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Siguiente" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
